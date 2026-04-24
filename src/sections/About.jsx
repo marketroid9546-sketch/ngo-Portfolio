@@ -3,26 +3,26 @@ import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: "NGO Operations Architecture",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Designing complete operational structures including programs, workflows, and execution models.",
   },
   {
     icon: Rocket,
-    title: "Performance",
+    title: "Digital Transformation for NGOs",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Building structured fundraising channels including donation boxes, campaigns, and donor engagement systems.",
   },
   {
     icon: Users,
-    title: "Collaboration",
+    title: "Fundraising Systems",
     description: "Working closely with teams to bring ideas to life.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Field Operations & Beneficiary Management",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Designing systems for beneficiary verification, distribution, and tracking.",
   },
 ];
 
@@ -40,39 +40,31 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+              Building systems 
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one component at a time.
+                that power real impact.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I specialize in building complete operational ecosystems for NGOs.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                From legal setup and program design to donor management, field execution, and digital transformation, I create systems that ensure organizations run efficiently and scale sustainably.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                With hands-on experience across operations, fundraising, IT systems, and field management, I don’t just design strategies. I implement them in real-world environments.
+              </p>
+              <p>
+                My goal is simple: build NGOs that are structured, transparent, and capable of delivering consistent impact.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "Strong NGOs are not built on effort, they are built on systems that work."
               </p>
             </div>
           </div>

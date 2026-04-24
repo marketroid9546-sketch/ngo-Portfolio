@@ -1,38 +1,84 @@
+import { useState } from "react";
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Donor Management System (DMS)",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
+      "Designed and implemented a complete donor lifecycle system including registration, donation tracking, real-time notifications, and reporting dashboards. Enabled improved donor engagement, transparency, and follow-up efficiency.",
+    image: "/projects/project1.jpeg",
     tags: ["React", "Typescript", "NodeJS"],
     link: "#",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "NGO ERP System",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
+      "uilt a centralized ERP covering HR, Accounts, Procurement, Programs, and IT operations. Provided leadership with real-time visibility and improved decision-making.",
+    image: "/projects/project2.jpeg",
     tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
     link: "#",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Fundraising Ecosystem (Physical + Digital)",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
+      "Designed and implemented an integrated fundraising system combining physical donation networks and digital platforms. Executed donation box placement, monitoring, and collection operations, alongside developing donation portals and campaign systems for online fundraising. Result: Enabled a scalable, transparent fundraising ecosystem across offline and online channels.",
+    image: "/projects/project3.jpeg",
     tags: ["React", "OpenAI", "Python", "FastAPI"],
     link: "#",
     github: "#",
   },
   {
-    title: "Project Management Tool",
+    title: "Call Center Setup",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
+      "Established a complete call center system for donor engagement, follow-ups, and conversion handling with scalable workflows.",
+    image: "/projects/project4.jpeg",
+    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Call Center Setup",
+    description:
+      "Established a complete call center system for donor engagement, follow-ups, and conversion handling with scalable workflows.",
+    image: "/projects/project4.jpeg",
+    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Call Center Setup",
+    description:
+      "Established a complete call center system for donor engagement, follow-ups, and conversion handling with scalable workflows.",
+    image: "/projects/project4.jpeg",
+    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Call Center Setup",
+    description:
+      "Established a complete call center system for donor engagement, follow-ups, and conversion handling with scalable workflows.",
+    image: "/projects/project4.jpeg",
+    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Call Center Setup",
+    description:
+      "Established a complete call center system for donor engagement, follow-ups, and conversion handling with scalable workflows.",
+    image: "/projects/project4.jpeg",
+    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Call Center Setup",
+    description:
+      "Established a complete call center system for donor engagement, follow-ups, and conversion handling with scalable workflows.",
+    image: "/projects/project4.jpeg",
     tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
     link: "#",
     github: "#",
@@ -40,6 +86,9 @@ const projects = [
 ];
 
 export const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
       {/* Bg glows */}
@@ -66,7 +115,7 @@ export const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, idx) => (
+          {displayedProjects.map((project, idx) => (
             <div
               key={idx}
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
@@ -134,8 +183,8 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
+          <AnimatedBorderButton onClick={() => setShowAll(!showAll)}>
+            {showAll ? "Show Less" : "View All Projects"}
             <ArrowUpRight className="w-5 h-5" />
           </AnimatedBorderButton>
         </div>

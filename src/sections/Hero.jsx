@@ -69,36 +69,32 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                NGO Operations Architect • Systems Builder 
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
-                <br />
-                experiences with
+                Building NGOs that don’t just operate <span className="text-primary glow-text">they scale and deliver impact.</span>
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  from idea to execution.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Pedro Machado — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+               I design and implement complete NGO systems, from registration and program structuring to fundraising, digital platforms, and field operations ensuring transparency, efficiency, and long-term scalability.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
+                Work With Me <ArrowRight className="w-5 h-5" />
               </Button>
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
-                Download CV
+                View Impact Systems
               </AnimatedBorderButton>
             </div>
 
@@ -148,7 +144,7 @@ export const Hero = () => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-2xl font-bold text-primary">19+</div>
                   <div className="text-xs text-muted-foreground">
                     Years Exp.
                   </div>
